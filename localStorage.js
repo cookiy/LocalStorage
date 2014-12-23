@@ -68,8 +68,13 @@ localData = {
         var oldVal = JSON.parse(localData.get(k));
         var newVal = JSON.parse(v);
         var finalVal=[]
-        var finalVal = oldVal.concat(newVal);
-        console.log(finalVal);
+        for (var i = 0; i < oldVal.length; i++) {
+             finalVal.push(oldVal[i]);
+        }
+
+        for (var i = 0; i < newVal.length; i++) {
+            finalVal.push(newVal[i]);
+        }
         localData.set(k,JSON.stringify(finalVal));
     }
 }
