@@ -57,6 +57,12 @@ localData = {
             console.log('第' + (i + 1) + '条数据的键值为：' + localStorage.key(i) + '，数据为：' + localStorage.getItem(localStorage.key(i)));
         }
     },
+    clear:function(){
+        for (var i = localStorage.length - 1; i >= 0; i--) {
+            // console.log('第' + (i + 1) + '条数据的键值为：' + localStorage.key(i) + '，数据为：' + localStorage.getItem(localStorage.key(i)));
+            localStorage.removeItem(localStorage.key(i));
+        }
+    },
     merge:function(k,v){
         console.log("localData merage method start");
         var oldVal = JSON.parse(localData.get(k));
