@@ -6,33 +6,14 @@
 </head>
 <body>
 <script type="text/javascript">
-
-		// var obj = JSON.parse(localData.get('5950538483923117147_msg'));
-
 		var originobj = [{"type":"web","suid":"5950508162712298601","ruid":"0","content":"wang","time":"2014-12-16 16:39:06"},{"type":"web","suid":"5950508162712298601","ruid":"0","content":"wang","time":"2014-12-16 16:39:06"},{"type":"web","suid":"5950508162712298601","ruid":"0","content":"wang","time":"2014-12-16 16:39:06"}];
 		var addobj = [{"type":"web","suid":"5950508162712298601","ruid":"0","content":"feng","time":"2014-12-16 16:39:06"},{"type":"web","suid":"5950508162712298601","ruid":"0","content":"feng","time":"2014-12-16 16:39:06"},{"type":"web","suid":"5950508162712298601","ruid":"0","content":"feng","time":"2014-12-16 16:39:06"}];
-
-
 		var bbbb = [];
-
-		// for (var i = 0; i < obj.length; i++) {
-	 //   	 	bbbb.push(obj[i]);
-		// }
-
-		// for (var i = 0; i < oooo.length; i++) {
-  //   		bbbb.push(oooo[i]);
-		// }
-
-
- 
-		// var bbbb = obj.concat(oooo);
-		// console.log(bbbb);
 
 		localData.set('test1',JSON.stringify(originobj));
 		localData.set('test2',JSON.stringify(addobj));
 		localData.merge('test1',JSON.stringify(addobj));
 
-		// var eeee = localData.get('5950538483923117147_msg');
 		console.log(localData.get('test1'));
 
 </script>
