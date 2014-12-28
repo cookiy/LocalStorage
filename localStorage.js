@@ -2,7 +2,6 @@ localData = {
     hname: location.hostname ? location.hostname : 'localStatus',
     isLocalStorage: window.localStorage ? true : false,
     dataDom: null,
-
     initDom: function() { //初始化userData
         if (!this.dataDom) {
             try {
